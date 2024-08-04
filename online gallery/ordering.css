@@ -1,0 +1,254 @@
+/*nav*/
+*{
+    margin: o;
+    padding: 0;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: cente
+}
+
+.list {
+    border: none;
+    background-color: white;
+    font-size: 23px;
+    font-weight: 300px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.list  a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #4E4FEB;
+    display: block;
+    margin: auto;
+    transition: o.5s;
+}
+.list a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+/*footer*/
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    text-align: end;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    background-color: #6479BE;
+}
+.logofoot img{
+    width:230px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+
+/*ordering*/
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    
+}
+.row{
+    display: flex;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+}
+.contact-col div img{
+    width: 500px;
+    height: 600px;
+    margin-top: 100px;
+}
+
+.contact-col input,.contact-col textarea{
+    width: 300px;
+    border-radius: 5px;
+    background-color: #475582;
+    color: #fcfcfc;
+    text-align: end;
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom:17px;
+    outline: none;
+    border: 1px solid #22125d;
+}
+.contact-col button{
+    background-color: #180c45;
+    color: #fcfcfc;
+    border: 1px solid #fff;
+    font-size: larger;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+.hi{
+    width: 30%;
+    border-radius: 10px;
+    background-color: #6479BE;
+    border: 2px solid #3003c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    color: #5d72b9;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .contact-col h2{
+        text-align: end;
+        font-size: smaller;
+    }
+    [class*="wall"]{
+        display: none;
+    }
+    [class*="row"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    [class*="hi"]{
+        width: 550px;
+}
+}
+
+
+@media only screen and (max-width: 657px){
+    .contact-col h2{
+        text-align: end;
+        font-size: smaller;
+    }
+    [class*="wall"]{
+        display: none;
+    }
+    [class*="row"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    [class*="hi"]{
+        width: 550px;
+}
+    [class*="list"] {
+    font-size: 20px;
+    font-weight: 200px;
+    margin: 10px;
+    margin-left: 0px;
+    
+}
+}
+
+
+@media only screen and (max-width: 586px){
+    .contact-col h2{
+        text-align: end;
+        font-size: smaller;
+    }
+    [class*="wall"]{
+        display: none;
+    }
+    [class*="row"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    [class*="hi"]{
+        width: 450px;
+}
+    [class*="list"] {
+    font-size: 20px;
+    font-weight: 200px;
+    margin: 10px;
+    margin-left: 0px;
+    
+}
+}
+
+
+@media only screen and (max-width: 475px){
+    .social-media img{
+        width: 25px;
+    }
+    .logofoot img{
+        width: 130px;
+        height: 100px;
+    }
+    
+    [class*="wall"]{
+        display: none;
+    }
+    [class*="row"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    [class*="hi"]{
+        width: 350px;
+}
+    [class*="list"] {
+    font-size: 20px;
+    font-weight: 200px;
+    margin: 10px;
+    margin-left: 0px;
+    
+}
+[class*="logofoot"]{
+    width: 110px;
+    height: 90px;
+   
+}
+
+[class*="footer"]{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 10px;
+}
+}
